@@ -48788,7 +48788,7 @@ s===$&&A.a()
 s.aI(0)
 this.au()},
 F(a){var s=null,r=A.b([A.ne(new A.aFr(),"/"),A.ne(new A.aFs(),"/home"),A.ne(new A.aFt(),"/signup"),A.ne(new A.aFu(),"/auth"),A.ne(new A.aFv(),"/onboarding"),A.ne(new A.aFw(),"/live_trip/:tripId"),A.ne(new A.aFx(),"/trip_details/:tripId"),A.ne(new A.aFy(),"/review_trip/:tripId"),A.ne(new A.aFz(),"/edit_trip/:tripId")],t.yo)
-return A.eJ(new A.dp(B.D6,new A.yd(A.b7u(!1,s,s,s,s,"/",s,s,s,!1,s,!0,s,!1,new A.ZJ(new A.asD(r,A.biv(),5))),"Askngo",A.zA(s,s,A.b5y(A.aOY("#737373")),A.aOY("#ece8d7"),A.b9h(A.M(a).p2),!0),!1,s),s),s,s)}}
+return A.eJ(new A.dp(B.D6,new A.yd(A.b7u(!1,s,s,s,s,"/",s,s,s,!1,s,!0,s,!1,new A.ZJ(new A.asD(r,A.biv(),5))),"MollyGo",A.zA(s,s,A.b5y(A.aOY("#737373")),A.aOY("#ece8d7"),A.b9h(A.M(a).p2),!0),!1,s),s),s,s)}}
 A.aFr.prototype={
 $2(a,b){return B.K8},
 $S:355}
@@ -109847,7 +109847,7 @@ B.D4=new A.ak(0,1/0,48,1/0)
 B.n4=new A.ak(48,1/0,48,1/0)
 B.n5=new A.ak(0,1/0,52,1/0)
 B.n6=new A.ak(0,640,0,1/0)
-B.D6=new A.ak(0,700,0,1/0)
+B.D6=new A.ak(0,800,0,1/0)
 B.jo=new A.ak(1/0,1/0,1/0,1/0)
 B.FA=new A.H(0.23529411764705882,0,0,0,B.f)
 B.vJ=new A.l(0,4)
