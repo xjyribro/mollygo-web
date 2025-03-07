@@ -83,25 +83,7 @@
     </style>
   </head>
   <body>
-    <div id="flutter_container">
-      <div id="flutter_host"></div>
-    </div>
 
-    <script>
-      window.addEventListener("load", function (ev) {
-        _flutter.loader.loadEntrypoint({
-          onEntrypointLoaded: function (engineInitializer) {
-            3;
-            engineInitializer
-              .initializeEngine({
-                hostElement: document.querySelector("#flutter_host"),
-              })
-              .then(function (appRunner) {
-                appRunner.runApp();
-              });
-          },
-        });
-      });
-    </script>
+    <script src="flutter_bootstrap.js" async></script>
   </body>
 </html>
