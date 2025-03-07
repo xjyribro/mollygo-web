@@ -34,7 +34,7 @@
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="molly-favicon.png" />
+    <link rel="icon" type="image/png" href="/icons/favicon.ico" />
 
     <title>MollyGo</title>
     <link rel="manifest" href="manifest.json" />
@@ -83,7 +83,25 @@
     </style>
   </head>
   <body>
+    <div id="flutter_container">
+      <div id="flutter_host"></div>
+    </div>
 
-    <script src="flutter_bootstrap.js" async></script>
+    <script>
+      window.addEventListener("load", function (ev) {
+        _flutter.loader.loadEntrypoint({
+          onEntrypointLoaded: function (engineInitializer) {
+            3;
+            engineInitializer
+              .initializeEngine({
+                hostElement: document.querySelector("#flutter_host"),
+              })
+              .then(function (appRunner) {
+                appRunner.runApp();
+              });
+          },
+        });
+      });
+    </script>
   </body>
 </html>

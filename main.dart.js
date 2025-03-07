@@ -8587,7 +8587,7 @@ $.ad.toString
 s=2
 return A.v(A.ahp(A.baS()),$async$a9w)
 case 2:s=3
-return A.v($.b8w().FA(0,".env"),$async$a9w)
+return A.v($.b8w().FA(0,"dotenv"),$async$a9w)
 case 3:A.axZ(A.b([B.Hh],t.UW))
 q=A.be0(B.PG,A.b([A.aSf(new A.aQQ(),t.h7),A.aSf(new A.aQR(),t.Mz),A.aSf(new A.aQS(),t.qD)],t.Ds))
 if($.ad==null)A.aAj()
