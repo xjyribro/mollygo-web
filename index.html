@@ -95,6 +95,7 @@
       }
 
       window.addEventListener("load", function () {
+        console.log(isMobileDevice());
         if (isMobileDevice()) {
           const script = document.createElement("script");
           script.src = "flutter_bootstrap.js";
