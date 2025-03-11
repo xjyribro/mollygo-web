@@ -88,14 +88,12 @@
     </div>
     <script>
       function isMobileDevice() {
-        console.log("navigator.userAgent", navigator.userAgent);
         return /Android|iPhone|iPad|iPod|Windows Phone/i.test(
           navigator.userAgent
         );
       }
 
       window.addEventListener("load", function () {
-        console.log(isMobileDevice());
         if (isMobileDevice()) {
           const script = document.createElement("script");
           script.src = "flutter_bootstrap.js";
