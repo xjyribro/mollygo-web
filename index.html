@@ -88,6 +88,7 @@
     </div>
     <script>
       function isMobileDevice() {
+        console.log("navigator.userAgent", navigator.userAgent);
         return /Android|iPhone|iPad|iPod|Windows Phone/i.test(
           navigator.userAgent
         );
