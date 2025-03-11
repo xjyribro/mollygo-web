@@ -86,21 +86,32 @@
     <div id="flutter_container">
       <div id="flutter_host"></div>
     </div>
-
     <script>
-      window.addEventListener("load", function (ev) {
-        _flutter.loader.loadEntrypoint({
-          onEntrypointLoaded: function (engineInitializer) {
-            3;
-            engineInitializer
-              .initializeEngine({
-                hostElement: document.querySelector("#flutter_host"),
-              })
-              .then(function (appRunner) {
-                appRunner.runApp();
-              });
-          },
-        });
+      function isMobileDevice() {
+        return /Android|iPhone|iPad|iPod|Windows Phone/i.test(
+          navigator.userAgent
+        );
+      }
+
+      window.addEventListener("load", function () {
+        if (isMobileDevice()) {
+          const script = document.createElement("script");
+          script.src = "flutter_bootstrap.js";
+          script.async = true;
+          document.body.appendChild(script);
+        } else {
+          _flutter.loader.loadEntrypoint({
+            onEntrypointLoaded: function (engineInitializer) {
+              engineInitializer
+                .initializeEngine({
+                  hostElement: document.querySelector("#flutter_host"),
+                })
+                .then(function (appRunner) {
+                  appRunner.runApp();
+                });
+            },
+          });
+        }
       });
     </script>
   </body>

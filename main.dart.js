@@ -9020,7 +9020,7 @@ var $async$aQA=A.n(function(c,d){if(c===1){o=d
 s=p}while(true)switch(s){case 0:p=4
 j=t.z
 s=7
-return A.t($.aa_().vr(0,$.b4d+"/trip",A.nS(A.L(["authorization","Bearer "+b],t.N,j),null),j),$async$aQA)
+return A.t($.aa_().vr(0,$.b4d,A.nS(A.L(["authorization","Bearer "+b],t.N,j),null),j),$async$aQA)
 case 7:n=d
 if(t.a.b(n.a)&&J.lH(n.a,"trips")){m=J.aW(n.a,"trips")
 j=J.fA(m,new A.aQB(a),t.xQ)
